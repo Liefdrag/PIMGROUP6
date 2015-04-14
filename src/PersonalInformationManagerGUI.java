@@ -131,7 +131,7 @@ public class PersonalInformationManagerGUI {
 		appointmentPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
 		appointmentPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
 		appointmentPane.setBounds(50, 30, 300, 50);
-		tabbedPane.addTab(NOTESTAB, appointmentPane);
+		tabbedPane.addTab(APPOINTEMENTSTAB, appointmentPane);
 	}
 
 	/**
