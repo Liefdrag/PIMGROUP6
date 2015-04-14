@@ -13,6 +13,7 @@ import java.util.Scanner;
  * @author	Jack Evans
  */
 public class DataBaseConnection {
+
 	// JDBC driver name and database URL
 	static final String DB_URL = "jdbc:mysql://localhost/";
 	static final String PIMDB_URL = "jdbc:mysql://localhost/PIMDataBase";
@@ -127,6 +128,12 @@ public class DataBaseConnection {
 		} catch (SQLException e) {
 			System.out.println("Unable to connect to Database");
 			return null;
+		}
+	}
+
+	public void addToDatabase(String[] row) {
+		for(String item: row) {
+			System.out.println("Adding: " + item);
 		}
 	}
 }
